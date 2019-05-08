@@ -1,0 +1,30 @@
+<!---View Hero Details form-->
+<h2>{{name+"details!"}}</h2>
+<h2>Id:{{""+id}}</h2>
+<div class="form-div">
+    <form name="editform" class="form-css" ng-submit="validate(editform.$valid)" novalidate>
+        <label>
+            <p>Name:</p>
+            <input type="text" ng-model="name" name="uname" required>
+        </label>
+        <div class="error" ng-show="editform.uname.$invalid">Tell your name</div>
+        <br>
+        <label>
+            <p>Job</p>
+            <select name="job" ng-model="userjob" required>
+                <option value="" selected>---Select your job---</option>
+                <option value="backend">Backend Developer</option>
+                <option value="frontend">Frontend Developer</option>
+                <option value="android">Android Developer</option>
+                <option value="HR">HR Manager</option>
+            </select>
+        </label>
+<!--job required-->
+     <div class="error" ng-show="editform.job.$error.required">Select your job</div>
+    <br><br>
+    <div class="formbtns">
+        <button id="b1" type="button" ng-click="goback()">Back</button>
+        <button id="b2" type="submit">Submit</button>
+    </div>
+    </form>
+</div>

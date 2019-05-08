@@ -1,0 +1,9 @@
+<!--View that comes after login-->
+<div class="topnav">
+<!--Displaying nested views in home page-->
+        <a ng-class="{active:selectclass1}" ng-show="showdashboard()" ui-sref="home.dashboard">Dashboard</a>
+        <a ng-class="{active:selectclass2}" ui-sref="home.heroeslist">Heroes</a>
+<!--Goes back to login page on clicking logout-->
+        <a class="logoutBtn" ng-click="logout()" ui-sref="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+</div>
+<ui-view></ui-view>

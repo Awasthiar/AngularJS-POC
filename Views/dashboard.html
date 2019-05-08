@@ -1,0 +1,7 @@
+<!--Displaying users fetched in div-->
+<h3>Top Heroes</h3>
+<div class="dashboardgrid">
+    <div ng-repeat="data in heroesdata">
+        <a ui-sref="home.herodetail({userid: {{data.id}},username:{{'data.first_name'}}+''+{{'data.last_name'}}})">{{data.first_name+""+last.name}}</a>
+    </div>
+</div>

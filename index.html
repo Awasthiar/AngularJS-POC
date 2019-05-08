@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--Angular app name-->
+<html ng-app="Hero_App">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AppPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--stylesheets-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/Styles/style.css">
+    <!--angular libs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.13/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.32/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.11/ngStorage.min.js"></script>
+    <!--routes-->
+    <script src="Routes/routes.js"></script>
+    <script src="Routes/resolveRole.js"></script>
+    <!--controllers-->
+    <script src="Controllers/loginController.js"></script>
+    <script src="Controllers/homeCtrl.js"></script>
+    <script src="Controllers/dashboardCtrl.js"></script>
+    <script src="Controllers/heroDetailCtrl.js"></script>
+    <script src="Controllers/heroesListCtrl.js"></script>  
+    <!--services-->
+    <script src="Services/apiGetService.js"></script>
+    <script src="Services/apiPostService.js"></script>    
+</head>
+<body>
+    <header>
+        <h1>Tour of Heroes</h1>
+    </header>
+    <div ui-view></div>    
+    
+   </body>
+</html>

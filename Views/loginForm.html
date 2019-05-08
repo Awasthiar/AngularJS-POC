@@ -1,0 +1,29 @@
+<main>
+    <div class="loginform-div">
+            <h2><i class="fa fa-sign-in"></i>Login</h2>
+         <form name="loginform" class="form-css" ng-submit="validate(loginform.$valid)" novalidate>
+            <label>
+                <p>Username:</p>
+                <input type="email" ng-model="loginemail" name="email" placeholder="username or email" required> 
+            </label>
+        <!--emailValidations-->
+            <div class="error" ng-show="loginform.email.$invalid && !loginform.email.$error.required">Email is invalid!</div>
+            <div class="error" ng-show="loginform.email.$error.required">Email is required!</div><br/>
+            <br>
+            <label>
+                <p>Password:</p>
+                <input type="password" ng-model="loginpassword" name="password" placeholder="password" required/><br />
+            </label>
+        <!--passwordValidations-->
+                <div class="error" ng-show="loginform.password.$error.required">Password is required!</div> 
+                <br><br>
+                
+                <button type="submit">Login</button>
+
+        </form>
+                                        
+    </div>
+</main>
+       
+       
+    
